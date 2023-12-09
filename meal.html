@@ -14,14 +14,23 @@
   <body>
     <header></header>
     <main>
-        <!-- search container -->
-        <section style="height: 120px;" class="d-flex justify-content-center align-items-center">
-            <div>
-                <input type="text" id="search-field" placeholder="search" class="px-2">
-                <button onclick="searchMeals()" class="btn btn-primary">Search</button>
-            </div>
-
-        </section>
+      <!-- search container -->
+      <section
+        style="height: 120px"
+        class="d-flex justify-content-center align-items-center"
+      >
+        <div>
+          <input
+            type="text"
+            id="search-field"
+            placeholder="search"
+            class="px-2"
+          />
+          <button onclick="searchMeals()" class="btn btn-primary">
+            Search
+          </button>
+        </div>
+      </section>
       <!-- meals container -->
       <section class="container">
         <div
@@ -29,6 +38,41 @@
           class="row row-cols-1 row-cols-md-3 g-4"
         ></div>
       </section>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="mealDetails"
+        tabindex="-1"
+        aria-labelledby="mealDetails"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="mealDetailsLabel">
+                Modal title
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div id="mealDetailsBody" class="modal-body"></div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <h1>Welcome to our Foods clections</h1>
     <script src="Js/meal.js"></script>
