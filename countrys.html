@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Countries</title>
-</head>
-<body>
+    <style>
+      #all-countries {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+      }
+      .country {
+        border: 2px solid tomato;
+        padding: 10px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
     <h1>All the Countries includes this site</h1>
-    <div id="all-countries">
-        
-    </div>
+    <section id="country-detail"></section>
+    <div id="all-countries"></div>
     <script src="Js/countries.js"></script>
-</body>
+  </body>
 </html>
